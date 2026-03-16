@@ -1,59 +1,150 @@
 # 📱 Flutter Mini Catalog Application
 
-[![Flutter](https://img.shields.io/badge/Flutter-3.41.4-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
-[![Dart](https://img.shields.io/badge/Dart-3.11.1-0175C2?logo=dart&logoColor=white)](https://dart.dev)
-[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](#)
-[![Status](https://img.shields.io/badge/Project-Learning-orange)](#)
+![Flutter](https://img.shields.io/badge/Flutter-3.41.4-blue)
+![Dart](https://img.shields.io/badge/Dart-3.11.1-blue)
+![Platform](https://img.shields.io/badge/Platform-Android-green)
+![Status](https://img.shields.io/badge/Project-Learning-orange)
 
-A modern, clean, and interactive **Flutter mobile catalog application**. This project is designed to demonstrate core Flutter concepts including UI development, efficient navigation, and lightweight state management.
+A simple **Flutter mobile catalog application** that presents products
+in a clean and interactive interface.\
+Users can browse items, search within the catalog, open product details,
+and simulate adding items to a cart.
 
----
+The project focuses on practicing **Flutter UI development, navigation,
+and basic state management**.
 
-## ✨ Features
+------------------------------------------------------------------------
 
-| Feature | Description |
-| :--- | :--- |
-| 🛍️ **Product Grid** | A responsive grid layout showcasing products with images and prices. |
-| 🔍 **Live Search** | Quick filtering functionality to find products in real-time. |
-| 📄 **Detail View** | Comprehensive product information screens with smooth transitions. |
-| 🛒 **Cart System** | Dynamic cart counter using `ValueNotifier` for efficient updates. |
-| 🚩 **Banners** | Interactive promotional banner section on the home screen. |
-| 🏗️ **Data Modeling** | Robust `fromJson` and `toJson` mapping for structured data. |
+# ✨ Features
 
----
+-   Product grid catalog
+-   Product card UI with image and price
+-   Detailed product information screen
+-   Product search functionality
+-   Banner section on home screen
+-   Cart counter with dynamic update
+-   Navigation between screens
+-   Passing objects via route arguments
+-   JSON-like product data structure
+-   Model class using `fromJson` and `toJson`
 
-## 🧱 Project Architecture
+------------------------------------------------------------------------
 
-The project follows a **modular structure** to ensure separation of concerns between UI, Data, and Business Logic.
+# 🧱 Project Architecture
 
+The project follows a **simple modular Flutter structure** to keep UI,
+data, and models separated.
 
+    lib
+    │
+    ├── data
+    │   ├── cart_state.dart
+    │   └── products.dart
+    │
+    ├── models
+    │   └── product.dart
+    │
+    ├── screens
+    │   ├── home_screen.dart
+    │   └── detail_screen.dart
+    │
+    ├── widgets
+    │   └── product_card.dart
+    │
+    └── main.dart
 
-```text
-lib
-├── data/           # Mock data and global state (cart_state.dart, products.dart)
-├── models/         # Data models (product.dart)
-├── screens/        # Main pages (home_screen.dart, detail_screen.dart)
-├── widgets/        # Reusable UI components (product_card.dart)
-└── main.dart       # App entry point & routing
+------------------------------------------------------------------------
 
-🛠 Technologies & ToolsFramework: Flutter 3.41.4 (Stable)Language: Dart 3.11.1UI Engine: Material Design 3State Management: ValueNotifier (Lightweight & Native)DevTools: Version 2.54.1📸 Screenshots<details><summary>Click to expand screenshots</summary>Home ScreenProduct DetailSearch View<img src="screenshots/home.png" width="250"><img src="screenshots/detail.png" width="250"><img src="screenshots/search.png" width="250"></details>▶️ Getting Started1. PrerequisitesEnsure you have the Flutter SDK installed on your machine.2. InstallationBash# Clone the repository
-git clone [https://github.com/yourusername/flutter-product-catalog.git](https://github.com/yourusername/flutter-product-catalog.git)
+# 🛠 Technologies
 
-# Navigate to project folder
-cd flutter-product-catalog
+This application is built using:
 
-# Install dependencies
-flutter pub get
-3. Run the AppBashflutter run
-🎯 Learning ObjectivesThis project serves as a practical implementation of:Widget Composition: Building complex UIs from simple, reusable widgets.Navigation: Passing objects via RouteSettings and arguments.JSON Serialization: Mapping raw data structures to Dart Objects.Clean Code: Maintaining a readable and scalable folder hierarchy.📄 LicenseThis project is intended for educational and learning purposes. Feel free to use it as a reference for your own Flutter journey!Developed with ❤️ for the Flutter Community.
----
+-   **Flutter**
+-   **Dart**
+-   **Material Design Widgets**
+-   **ValueNotifier** (lightweight state management)
 
-### 💡 Neleri Değiştirdim ve Neden?
+------------------------------------------------------------------------
 
-* **Rozetler (Badges):** Sadece metin yerine logolu ve renkli resmi rozetler ekledim.
-* **Özellik Tablosu:** Özellikleri düz metin yerine tabloya koyarak "scannability" (hızlıca göz gezdirme) özelliğini artırdım.
-* **Klasör Yapısı:** `code block` kullanarak terminaldeki dosya ağacı görünümünü simüle ettim.
-* **Screenshots Bölümü:** Resimlerin çok yer kaplamaması için bir `details` (açılır-kapanır menü) içine aldım ve yan yana tablo şeklinde dizdim.
-* **Kurulum Adımları:** Bash kod blokları kullanarak kullanıcının kopyala-yapıştır yapmasını kolaylaştırdım.
+# 🔧 Development Environment
 
-**Senin için başka bir düzenleme yapmamı ister misin?** (Örneğin, projeye bir "Gelecek Ö
+    Flutter 3.41.4 (Stable)
+    Dart 3.11.1
+    DevTools 2.54.1
+
+------------------------------------------------------------------------
+
+# 📦 Product Data
+
+Product information is defined in a **JSON-style structure** and mapped
+to Dart objects through a model class.
+
+Data conversion is handled with:
+
+    Product.fromJson()
+
+------------------------------------------------------------------------
+
+# 📸 Screenshots
+
+### 🏠 Home Screen
+
+Displays the product catalog.
+
+    screenshots/home.png
+
+### 📄 Product Detail
+
+Shows detailed information about a selected product.
+
+    screenshots/detail.png
+
+### 🔎 Search
+
+Allows filtering products quickly.
+
+    screenshots/search.png
+
+------------------------------------------------------------------------
+
+# ▶️ Running the Project
+
+### 1. Install Flutter
+
+https://docs.flutter.dev/get-started/install
+
+### 2. Clone the repository
+
+    git clone https://github.com/yourusername/flutter-product-catalog.git
+
+### 3. Navigate to the project folder
+
+    cd flutter-product-catalog
+
+### 4. Install dependencies
+
+    flutter pub get
+
+### 5. Run the application
+
+    flutter run
+
+------------------------------------------------------------------------
+
+# 🎯 Learning Focus
+
+This project demonstrates several important Flutter concepts:
+
+-   Widget-based UI development
+-   Clean project structure
+-   Screen navigation with routes
+-   Passing data between pages
+-   Basic state management
+-   Working with structured data models
+
+------------------------------------------------------------------------
+
+# 📄 License
+
+=======# Flutter-Mini-Catalog-Application
+This project is intended for **educational and learning purposes**.
