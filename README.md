@@ -1,11 +1,11 @@
-# 📱 Flutter Mini Catalog Application
+# 📱 Mini Catalog Application
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.41.4-blue)
 ![Dart](https://img.shields.io/badge/Dart-3.11.1-blue)
 ![Platform](https://img.shields.io/badge/Platform-Android-green)
 ![Status](https://img.shields.io/badge/Project-Learning-orange)
 
-A simple **Flutter mobile catalog application** that presents products
+A simple ** mobile catalog application** that presents products
 in a clean and interactive interface.\
 Users can browse items, search within the catalog, open product details,
 and simulate adding items to a cart.
@@ -91,19 +91,19 @@ Data conversion is handled with:
 
 Displays the product catalog.
 
-    screenshots/home.png
+    screenshots/anasayfa.png
 
 ### 📄 Product Detail
 
 Shows detailed information about a selected product.
 
-    screenshots/detail.png
+    screenshots/detay.png
 
 ### 🔎 Search
 
 Allows filtering products quickly.
 
-    screenshots/search.png
+    screenshots/arama.png
 
 ------------------------------------------------------------------------
 
