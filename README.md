@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📱 Flutter Mini Catalog Application
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.41.4-blue)
@@ -146,4 +147,7 @@ This project demonstrates several important Flutter concepts:
 
 # 📄 License
 
+=======
+# Flutter-Mini-Catalog-Application
+>>>>>>> f4b631a5bbd07c4dab9aec175435f0dccf39712b
 This project is intended for **educational and learning purposes**.
