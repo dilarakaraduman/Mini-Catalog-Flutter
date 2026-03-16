@@ -147,7 +147,5 @@ This project demonstrates several important Flutter concepts:
 
 # 📄 License
 
-=======
-# Flutter-Mini-Catalog-Application
->>>>>>> f4b631a5bbd07c4dab9aec175435f0dccf39712b
+=======# Flutter-Mini-Catalog-Application
 This project is intended for **educational and learning purposes**.
